@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Contato Petshop</title>
 </head>
 <body>
-    <header class="banner-principal">
+    <header class="banner-secundario">
         <h1>Kagemane</h1>
         <h4>Petshop</h4>
     </header>
@@ -14,14 +20,14 @@
     <nav class="navegacao">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li>
+            <li class="submenu">
                 <a href="servicos.html">Serviços</a>
                 <ul>
-                    <li>Aquáticos</li>
-                    <li>Cães</li>
-                    <li>Gatos</li>
-                    <li>Roedores</li>
-                    <li>Outros</li>
+                    <li><a href="servicos.html#aquaticos">Aquáticos</a></li>
+                    <li><a href="servicos.html#caes">Cães</a></li>
+                    <li><a href="servicos.html#gatos">Gatos</a></li>
+                    <li><a href="servicos.html#roedores">Roedores</a></li>
+                    <li><a href="servicos.html#outros">Outros</a></li>
                 </ul>
             </li>
             <li><a href="loja.html">Loja</a></li>
@@ -31,7 +37,7 @@
 
     <main>
         <h2>Cadastro</h2>
-        <form action="">
+        <form action="" class="formulario">
             <label for="nome-dono">Nome do dono:</label>
             <input type="text" id="nome-dono" required>
 
@@ -56,6 +62,9 @@
             <label for="cidade">Cidade</label>
             <select name="cidade" id="cidade">
                 <option value="jf">Juiz de fora</option>
+                <option value="bh">Belo Horizonte</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
             </select>
         </form>
     </main>
