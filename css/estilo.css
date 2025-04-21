@@ -11,3 +11,156 @@
 .petshop-3-rgba { color: rgba(242, 132, 68, 1); }
 .petshop-4-rgba { color: rgba(242, 98, 65, 1); }
 .petshop-5-rgba { color: rgba(242, 65, 65, 1); } */
+
+
+/* Fontes */
+/* Winky Rough: <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> */
+/* Playwrite Cuba: <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet"> */
+/* Oswald: <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"> */
+
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo padrão para todo o site */
+body {
+    background-color: rgba(242, 98, 65, 1);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Títulos */
+h1 {
+    font-family: "Oswald";
+    font-size: 8rem;
+}
+
+h2 {
+    font-family: "Playwrite CU";
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+}
+
+h4 {
+    font-family: "Playwrite CU", cursive;
+    font-size: 4rem;
+}
+
+p {
+    font-family: "Oswald";
+    font-size: 1.5rem;
+}
+
+/* Banners */
+.banner-principal {
+    height: 90vh;
+}
+
+.banner-secundario {
+    height: 70vh;
+}
+
+/* Navegação */
+.navegacao {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+.navegacao ul {
+    list-style: none;
+    background-color: rgba(242, 65, 65, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navegacao ul li {
+    font-family: "Winky Rough", sans-serif;
+    font-size: 2.5rem;
+    padding: 1.5%;
+    margin: 0% 2% 0% 2%;
+}
+
+.submenu > ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    padding: 2% 4%;
+}
+
+.submenu:hover > ul {
+    display: flex;
+}
+
+li > a {
+    color: rgba(35, 112, 78, 1);
+    text-decoration: none;
+    padding: 2.5%;
+}
+
+li > a:hover {
+    background-color: rgba(242, 132, 68, 1);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+/* Efeito parallax para index.html */
+.parallax {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../img/parallax.jpg");
+    opacity: 0.7;
+}
+
+.conteudo {
+    background-color: rgba(242, 132, 68, 1);
+    width: 85%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10%;
+    padding: 3%;
+}
+
+/* .container-tabela {} */
+
+/* .container-produtos {} */
+
+/* .produto {} */
+
+/* .carrinho {} */
+
+/* .barra-lateral {} */
+
+/* .formulario {} */
+
+.rodape {
+    background-color: rgba(242, 65, 65, 1);
+    width: 100%;
+    padding: 3%;
+}
+
+.rodape p {
+    text-align: center;
+    font-family: "Winky Rough";
+    font-size: 1rem;
+}
