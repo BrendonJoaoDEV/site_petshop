@@ -1,16 +1,14 @@
-/* Color Theme Swatches in Hex */
-/* .petshop-1-hex { color: #23704E; }
-.petshop-2-hex { color: #3B8C6E; }
-.petshop-3-hex { color: #F28444; }
-.petshop-4-hex { color: #F26241; }
-.petshop-5-hex { color: #F24141; } */
+
 
 /* Color Theme Swatches in RGBA */
 /* .petshop-1-rgba { color: rgba(35, 112, 78, 1); }
 .petshop-2-rgba { color: rgba(59, 140, 110, 1); }
 .petshop-3-rgba { color: rgba(242, 132, 68, 1); }
 .petshop-4-rgba { color: rgba(242, 98, 65, 1); }
-.petshop-5-rgba { color: rgba(242, 65, 65, 1); } */
+.petshop-5-rgba { color: rgba(242, 65, 65, 1); }
+.petshop-6-rgba { color: rgba(89, 54, 57, 1); }
+.petshop-7-rgba { color: rgba(242, 232, 220, 1); }
+*/
 
 
 /* Fontes */
@@ -32,13 +30,12 @@ body {
 
 /* Cabeçalho */
 header {
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/banner.jfif");
     background-position: center;
     background-size: cover;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -47,6 +44,14 @@ main {
     flex: 3;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Artigos */
+article {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -102,14 +107,19 @@ li > a:hover {
 /* Formulário */
 form {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    background-color: #fff;
-    width: 70%;
 }
 
-form input {
+input, select, textarea {
+    font-size: 1.5rem;
+    color: rgba(89, 54, 57, 1);
     width: 100%;
+    margin: 1.5% 0%;
+    background-color: rgba(242, 232, 220, 1);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(89, 54, 57, 1);
 }
 
 /* Maoa */
@@ -117,6 +127,15 @@ iframe {
     width: 80%;
     border-radius: 1%;
     margin: 5% auto;
+}
+
+/* Imagens */
+img {
+    max-height: 50vh;
+    max-width: 30vw;
+    object-fit: cover;
+    padding: 0% 5%;
+    border-radius: 5%;
 }
 
 /* Banners */
@@ -141,6 +160,7 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .navegacao ul li {
@@ -151,11 +171,14 @@ iframe {
 }
 
 .submenu > ul {
+    background-color: rgba(242, 98, 65, 1);
     display: none;
     flex-direction: column;
     position: absolute;
     justify-content: center;
+    align-items: center;
     padding: 2% 4%;
+    border-radius: 2%;
 }
 
 .submenu:hover > ul {
@@ -187,17 +210,29 @@ iframe {
     flex: 1;
 }
 
-/* .container-tabela {} */
+.parceiros {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    font-family: "Winky Rough", sans-serif;
+}
 
-/* .container-produtos {} */
+.informacoes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* .produto {} */
+.informacoes li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-/* .carrinho {} */
-
-/* .barra-lateral {} */
-
-/* .formulario {} */
+.icone {
+    max-height: 7vh;
+    margin: 2% 4%;
+}
 
 .rodape {
     background-color: rgba(242, 65, 65, 1);
@@ -209,4 +244,19 @@ iframe {
     text-align: center;
     font-family: "Winky Rough";
     font-size: 1rem;
+}
+
+/* Mudanças para responsividade em telas pequenas */
+@media (max-width: 768px) {
+    .navegacao ul {
+        flex-direction: column;
+    }
+
+    .submenu > ul {
+        position: relative;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
 }
